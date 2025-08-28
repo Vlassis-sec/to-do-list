@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>To Do List</title>
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="header" class="header">Home</h1>
+      <button id="options" class="options-btn">Options</button>
+    </header>
+    <main>
+      <div class="container" id="container">
+        <ul class="to-do-list">
+          <li id="to-do-item" class="to-do-item">
+            <input type="checkbox" />
+            Clean the Kitchen
+            <button id="delete-btn" class="delete-btn">Delete</button>
+          </li>
+          <li id="to-do-item" class="to-do-item">
+            <input type="checkbox" />
+            Go to super market
+            <button id="delete-btn" class="delete-btn">Delete</button>
+          </li>
+        </ul>
+      </div>
+      <input type="text" placeholder="Add new To Do" />
+      <button id="add-item">+</button>
+      <i class="fa-solid fa-trash"></i>
+    </main>
+  </body>
+</html>
