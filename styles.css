@@ -1,0 +1,207 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style-type: none;
+}
+
+h1 {
+  font-family: "Roboto Flex" sans-serif;
+  font-weight: lighter;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 30;
+}
+
+.material-symbols-outlined:hover {
+  cursor: pointer;
+}
+
+body {
+  height: 100vh;
+  padding: 10px;
+  background: linear-gradient(0.25turn, #eda28a, #8ad5ed);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+/* UTILITY CLASSES */
+
+.p-20 {
+  padding: 20px;
+}
+
+/* HEADER HIGHT AND WIDTH*/
+.h-h-20 {
+  height: 20vh;
+}
+
+.h-w-50 {
+  width: 50%;
+}
+/* LISTS CONTAINER HEIGHT AND WIDTH*/
+.li-cnt-h-80 {
+  height: 80vh;
+}
+
+.li-cnt-w-70 {
+  width: 70%;
+}
+
+.h-li-co-bg {
+  background-color: #e5d7cb;
+}
+
+.bo-rad-50 {
+  border-radius: 50px;
+}
+
+.header-input {
+  background-color: #cbd9e5;
+  font-size: 1.3rem;
+  padding: 2px;
+}
+
+.ic-size-35 {
+  font-size: 35px;
+}
+
+.tasks-list {
+  border: 1px solid black;
+  height: 100%;
+  padding: 15px;
+  background-color: #f9f7f5;
+  overflow-y: scroll;
+}
+
+.ta-li-gap-10 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.sc-ba {
+  scrollbar-width: none;
+}
+
+.li-bg {
+  background: linear-gradient(
+    90deg,
+    #efcec3 0%,
+    #efcec3 25%,
+    #c1d9e1 50%,
+    #c1d9e1 60%,
+    #efcec3 80%
+  );
+}
+
+.ta-li-width {
+  width: 40%;
+}
+
+.li-width {
+  width: 90%;
+}
+.sp-font {
+  font-family: "Roboto flex", sans-serif;
+}
+
+.sp-font-size-25 {
+  font-size: 25px;
+}
+
+.sp-width {
+  width: 100%;
+}
+
+.btn-bg {
+  background: none;
+}
+
+.bo-none {
+  border: none;
+}
+
+.li-shad {
+  box-shadow: 5px 5px 12px 0px black;
+}
+
+/* END OF UTILITY CLASSES */
+
+/* PSEUDO CLASSES */
+
+.header__form input:focus {
+  outline: none;
+}
+
+.settings-icn-animation:hover {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-direction: left;
+}
+
+/* ANIMATIONS */
+@keyframes rotate {
+  0% {
+    transform: rotate(180deg);
+  }
+}
+/* END OF ANIMATIONS */
+
+/* END OF PSEUDO CLASSES */
+
+.header {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.lists-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.header__form {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header__form label {
+  visibility: hidden;
+  position: absolute;
+}
+
+.header__form input {
+  padding: 10px;
+}
+
+.header__form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks-list__list-item {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.tasks-list--completed {
+  border: 1px solid black;
+}

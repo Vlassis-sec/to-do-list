@@ -3,34 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <link href="styles.css" rel="stylesheet" />
     <title>To Do List</title>
     <script src="main.js" defer></script>
   </head>
 
-  <body>
-    <header>
-      <h1 id="header" class="header">Home</h1>
-      <button id="options" class="options-btn">Options</button>
-    </header>
-    <main>
-      <div class="container" id="container">
-        <ul class="to-do-list">
-          <li id="to-do-item" class="to-do-item">
-            <input type="checkbox" />
-            Clean the Kitchen
-            <button id="delete-btn" class="delete-btn">Delete</button>
-          </li>
-          <li id="to-do-item" class="to-do-item">
-            <input type="checkbox" />
-            Go to super market
-            <button id="delete-btn" class="delete-btn">Delete</button>
-          </li>
-        </ul>
+  <!-- <body>
+      <div class="header-card">
+        <div class="header-add-box">
+          <header class="header-container">
+            <h1 class="header">Plan your day!</h1>
+          </header>
+          <button class="add-task-header" id="add-task">
+            <span class="material-symbols-outlined color-eda28a size-40"
+              >add_circle</span
+            >
+          </button>
+        </div>
       </div>
-      <input type="text" placeholder="Add new To Do" />
-      <button id="add-item">+</button>
-      <i class="fa-solid fa-trash"></i>
+
+      
+      <div class="tasks-card">
+        <form class="input-add-to-do">
+          <input type="text" class="input-to-do" />
+          <button class="add-task" id="add-task">
+            <span class="material-symbols-outlined">add_circle</span>
+          </button>
+        </form>
+       
+        <ul class="task-list">
+          <div class="tasks-label">Your tasks :</div>
+          <div class="to-do-card">
+            <li class="to-do">
+              <input type="checkbox" class="task-checkbox" />
+              Clean the kitchen
+              <button class="delete-btn" id="delete-btn">
+                <span class="material-symbols-outlined">delete</span>
+              </button>
+            </li>
+            <li class="to-do">
+              <input type="checkbox" class="task-checkbox" />
+              Clean the kitchen
+              <button class="delete-btn" id="delete-btn">
+                <span class="material-symbols-outlined">delete</span>
+              </button>
+            </li>
+            <li class="to-do">
+              <input type="checkbox" class="task-checkbox" />
+              Clean the kitchen
+              <button class="delete-btn" id="delete-btn">
+                <span class="material-symbols-outlined">delete</span>
+              </button>
+            </li>
+          </div>
+        </ul>
+        
+        <ul class="task-list">
+          <div class="tasks-label">Completed tasks :</div>
+          <div class="to-do-card">
+            <li class="to-do">
+              <input type="checkbox" class="task-checkbox" />
+              Clean the kitchen
+            </li>
+            <li class="to-do">
+              <input type="checkbox" class="task-checkbox" />
+              Clean the kitchen
+            </li>
+            <li class="to-do">
+              <input type="checkbox" class="task-checkbox" />
+              Clean the kitchen
+            </li>
+          </div>
+        </ul>
+        <button class="settings" id="settings">
+          <span class="material-symbols-outlined">settings</span>
+        </button>
+      </div>
+    </div>
+  </body> -->
+
+  <!-- NEW STRUCTURE -->
+
+  <body>
+    <header class="header p-20 h-h-20 h-w-50 h-li-co-bg bo-rad-50">
+      <h1 class="header__h1">Plan your day efficiently</h1>
+      <form class="header__form">
+        <label for="input">Add a task</label>
+        <input
+          type="text"
+          placeholder="Add a task"
+          id="input"
+          class="header-input bo-rad-50 bo-none"
+        />
+        <button class="bo-none btn-bg">
+          <span class="material-symbols-outlined ic-size-35">add_circle</span>
+        </button>
+      </form>
+    </header>
+    <main class="lists-container li-cnt-h-80 li-cnt-w-70 bo-rad-50 h-li-co-bg">
+      <ul
+        class="tasks-list--pending bo-rad-50 tasks-list sc-ba ta-li-gap-10 ta-li-width"
+      >
+        <span class="sp-font sp-font-size-25">Tasks</span>
+        <li class="tasks-list__list-item li-bg bo-rad-50 li-width li-shad">
+          <input type="checkbox" />
+          <span class="sp-font sp-width">Go to superMarket</span>
+          <button class="btn-bg bo-none">
+            <span class="material-symbols-outlined ic-size-35">delete</span>
+          </button>
+        </li>
+      </ul>
+      <ul
+        class="tasks-list--completed bo-rad-50 tasks-list sc-ba ta-li-gap-10 ta-li-width"
+      >
+        <span class="sp-font sp-font-size-25">Completed</span>
+        <!-- <li class="tasks-list__list-item li-bg bo-rad-50 li-width li-shad">
+          <input type="checkbox" checked="true" />
+          <span class="sp-font sp-width">lorem</span>
+          <button class="btn-bg bo-none">
+            <span class="material-symbols-outlined ic-size-35">delete</span>
+          </button>
+        </li>
+        <li class="tasks-list__list-item li-bg bo-rad-50 li-width li-shad">
+          <input type="checkbox" />
+          <span class="sp-font sp-width"
+            >Go to supermaker then go to the store then go to the store then go
+            to the store</span
+          >
+          <button class="btn-bg bo-none">
+            <span class="material-symbols-outlined ic-size-35">delete</span>
+          </button>
+        </li> -->
+      </ul>
+      <button class="settings-btn bo-none btn-bg">
+        <span
+          class="material-symbols-outlined ic-size-35 settings-icn-animation"
+          >settings</span
+        >
+      </button>
     </main>
   </body>
 </html>
