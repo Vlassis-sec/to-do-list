@@ -128,6 +128,12 @@ body {
   box-shadow: 5px 5px 12px 0px black;
 }
 
+.delete-animation {
+  animation-name: delete;
+  animation-duration: 2.5s;
+  animation-timing-function: ease-in;
+}
+
 /* END OF UTILITY CLASSES */
 
 /* PSEUDO CLASSES */
@@ -147,6 +153,16 @@ body {
 @keyframes rotate {
   0% {
     transform: rotate(180deg);
+  }
+}
+
+@keyframes delete {
+  0% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0%;
   }
 }
 /* END OF ANIMATIONS */
