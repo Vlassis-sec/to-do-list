@@ -13,8 +13,11 @@
     />
     <link href="styles.css" rel="stylesheet" />
     <title>To Do List</title>
-    <script src="utils.js" defer></script>
-    <script src="main.js" defer></script>
+    <script src="./StateManager.js" type="module"></script>
+    <script src="./Storage.js" type="module"></script>
+    <script src="./utils.js" type="module"></script>
+    <script src="./Renderer.js" type="module"></script>
+    <script src="./main.js" type="module"></script>
   </head>
 
   <body>
@@ -64,10 +67,13 @@
           </button>
         </li> -->
       </ul>
-      <button class="settings-btn bo-none btn-bg">
-        <span
-          class="material-symbols-outlined ic-size-35 settings-icn-animation"
-          >settings</span
+      <button
+        class="toggle_btn bo-none btn-bg"
+        id="toggle_btn"
+        title="Show completed tasks"
+      >
+        <span class="material-symbols-outlined ic-size-35" id="toggle_icn"
+          >visibility</span
         >
       </button>
     </main>

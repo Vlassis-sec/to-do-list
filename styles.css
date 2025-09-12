@@ -134,6 +134,10 @@ body {
   animation-timing-function: ease-in;
 }
 
+.vi-hid {
+  visibility: hidden;
+}
+
 /* END OF UTILITY CLASSES */
 
 /* PSEUDO CLASSES */
@@ -142,17 +146,26 @@ body {
   outline: none;
 }
 
-.settings-icn-animation:hover {
+.visibility-icn-animation:hover {
+  border-radius: 50px;
   animation-name: rotate;
-  animation-duration: 1s;
+  animation-duration: 0.5s;
   animation-timing-function: ease-in-out;
-  animation-direction: left;
+  animation-fill-mode: forwards;
+}
+
+.bg-ic-color {
+  color: #c1d9e1;
 }
 
 /* ANIMATIONS */
 @keyframes rotate {
   0% {
-    transform: rotate(180deg);
+    color: black;
+  }
+  100% {
+    /* transform: rotate(180deg); */
+    color: #c1d9e1;
   }
 }
 
@@ -168,7 +181,6 @@ body {
 /* END OF ANIMATIONS */
 
 /* END OF PSEUDO CLASSES */
-
 .header {
   border: 1px solid black;
   display: flex;
